@@ -1,0 +1,13 @@
+{
+  "name": "iqra-construction",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "db:apply": "node supabase/apply.mjs",
+    "import": "node supabase/import-salesforce.mjs",
+    "import:check": "node supabase/import-salesforce.mjs --self-test"
+  },
+  "dependencies": {
+    "pg": "^8.16.3"
+  }
+}
